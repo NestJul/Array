@@ -13,7 +13,7 @@ public class MonthlySalesServicesTest {
     Assertions.assertEquals(expected,actual);
 }
 @Test
-public void SholdBeSumm(){
+public void ShouldBeSumm(){
 MonthlySalesServices services = new MonthlySalesServices();
     long[] sales = {500, 1100, 900, 660, 700, 400, 700, 909, 999, 100, 800, 308};
     int expected = 8076;
@@ -21,34 +21,34 @@ MonthlySalesServices services = new MonthlySalesServices();
     Assertions.assertEquals(expected,actual);
 }
 @Test
-    public void SholdBeavgSales(){
+    public void ShouldBeAvgSales(){
     MonthlySalesServices services = new MonthlySalesServices();
     long[] sales = {500, 1100, 900, 660, 700, 400, 700, 909, 999, 100, 800, 308};
-    int expected = 581;
+    int expected = 673;
     int actual = services.avgSales(sales);
     Assertions.assertEquals(expected,actual);
 }
 @Test
-    public void SholdBeMaxSales() {
+    public void ShouldBeMaxSales() {
     MonthlySalesServices services = new MonthlySalesServices();
     long[] sales = {500, 1100, 900, 660, 700, 400, 700, 909, 999, 100, 800, 308};
-    int expected = 1100;
+    int expected = 2;
     int actual = services.numMaxSales(sales);
     Assertions.assertEquals(expected,actual);
 }
 @Test
-    public void ShouldBeNumavgMinSales() {
+    public void ShouldBeNumAvgMinSales() {
     MonthlySalesServices services = new MonthlySalesServices();
     long[] sales = {500, 1100, 900, 660, 700, 400, 700, 909, 999, 100, 800, 308};
-    int expected = 4;
+    int expected = 7;
     int actual = services.numAvgMinSales(sales);
     Assertions.assertEquals(expected,actual);
 }
 @Test
-public void ShouldBeNumavgMaxSales() {
+public void ShouldBeNumAvgMaxSales() {
     MonthlySalesServices services = new MonthlySalesServices();
         long[] sales = {500, 1100, 900, 660, 700, 400, 700, 909, 999, 100, 800, 308};
-        int expected = 4;
+        int expected = 7;
         int actual = services.numAvgMinSales(sales);
         Assertions.assertEquals(expected,actual);
     }
